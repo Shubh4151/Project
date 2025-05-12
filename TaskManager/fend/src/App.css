@@ -1,0 +1,157 @@
+/* Reset & Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  }
+  /* Centering for login/register */
+  .con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  /* Flip Animation */
+  .card {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    /* Flip animation added */
+    transform: rotateY(0deg);
+    animation: flipIn 0.5s ease;
+    transition: transform 0.5s ease;
+  }
+  @keyframes flipIn {
+    from {
+      transform: rotateY(90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotateY(0deg);
+      opacity: 1;
+    }
+  }
+  .card h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  .card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color:darkblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .card button:hover {
+    background-color: #4527a0;
+  }
+  .card button:last-child {
+    background-color: #00897b;
+  }
+  .card button:last-child:hover {
+    background-color: #00695c;
+  }
+
+
+  /* To-Do Page Container */
+  .todo-wrapper {
+    width: 80%;
+    height: 100vh;
+    margin-left: 50px;
+    padding: 10px;
+  }
+  /* Task Input Card */
+  .todo-input-card {
+    padding: 30px;
+    text-align: center;
+  }
+  .todo-input {
+    display: flex;
+    gap: 5px;
+  }
+  .todo-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .todo-input button {
+    padding: 20px;
+    background-color: #00acc1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .todo-input button:hover {
+    background-color: #00838f;
+  }
+  /* Task Section Cards */
+  .todo-section {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow:5 6px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+  }
+  .todo-section h3 {
+    color: #5e35b1;
+    margin-bottom: 5px;
+  }
+
+  /* Task Items */
+
+  /* Buttons in Each Task */
+  .todo-item button {
+    margin-left: 0.5rem;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor:grab;
+  }
+  .task-item{
+    display:flex;
+    right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .task,.ct{
+    width: 80%;
+    right: 20px;
+    color: #00838f;
+    font-size: 20px;
+  }
+  #b1,#b2{
+    padding: 10px;
+    margin: 5px;
+    background-color: #00acc1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
